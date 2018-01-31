@@ -11,26 +11,26 @@ import unittest
 
 class TestAssignmentOne(unittest.TestCase):
 
-    def remove_vowels(self):
+    def test_remove_vowels(self):
         self.assertEqual(remove_vowels('mobile'), 'mbl')
         self.assertEqual(remove_vowels('MOBILE'), 'MBL')
         self.assertEqual(remove_vowels('MobIlE'), 'Mbl')
 
-    def remove_vowel(self):
+    def test_test_remove_vowel(self):
         self.assertEqual(remove_vowel('mobile'), 'mbl')
         self.assertEqual(remove_vowel('MOBILE'), 'MBL')
         self.assertEqual(remove_vowel('MobIlE'), 'Mbl')
 
-    def findCharOccurences(self):
+    def test_findCharOccurences(self):
         self.assertEqual(findCharOccurences('This is javaScript','i'), [2,5,15])
 
-    def numMul(self):
+    def test_numMul(self):
         self.assertEqual(numMul(3), [[1],[2,4],[3,6,9]])
 
     #def numberDouble(self):
     #    self.assertEqual(numberDouble(3), [[1],[2,4],[3,6,9]])
 
-    def dictDisplay(self):
+    def test_dictDisplay(self):
         self.assertEqual(dictDisplay(["Asmaa","Ibrahim","Aliaa"]),{'I': ['Ibrahim'], 'A': ['Aliaa', 'Asmaa']})
     # def test_task_five_enas(self):
     #     l1 = ["ahmed", "fatma", "ibrahim"]
